@@ -1,33 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Responsive Resume 1</title>
+  <title>Leslie M. Van Dyck — E&E (AFSC 2A656), SATCOM (25S)</title>
+  <meta name="description"
+    content="Leslie M. Van Dyck — Aircraft Electrical & Environmental (AFSC 2A656, 5-Level), former Army SATCOM (31S→25S30). Physics- and RF-literate creator." />
+  <!-- Social preview (Open Graph only) -->
+  <meta property="og:title" content="Leslie M. Van Dyck — E&E (2A656), SATCOM (25S)" />
+  <meta property="og:description"
+    content="Journeyman E&E (AFSC 2A656), Army SATCOM background, Physics/RF focus. San Francisco Bay Area." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://MayJump.github.io/CS110A_resume_project/mecopy.jpg" />
+  <meta property="og:url" content="https://MayJump.github.io/CS110A_resume_project/" />
+  <link rel="canonical" href="https://MayJump.github.io/CS110A_resume_project/" />
+
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <div class="container">
     <header>
       <div>
-        <h1>Student Name</h1>
-        <p>student.email@example.com | (123) 456-7890</p>
-        <p><a href="#">linkedin.com/in/student</a></p>
+        <h1>Leslie M. Van Dyck</h1>
+        <p class="tagline">Electrical &amp; Environmental Journeyman (AFSC 2A656) · Former Army SATCOM Satellite
+          Network Engineer (31S→25S30)</p>
+        <p>
+          <a href="mailto:mvandyck@mail.ccsf.edu">mvandyck@mail.ccsf.edu</a> |
+          <a href="tel:+16289975170">628-997-5170</a> |
+          <a href="https://www.linkedin.com/in/leslie-van-dyck-baa696390/" target="_blank" rel="noopener">LinkedIn</a> |
+          <a href="https://github.com/YOURUSERNAME" target="_blank" rel="noopener">GitHub</a>
+        </p>
       </div>
-      <img src="photo_placeholder.png" alt="Profile Photo" />
+      <img class="headshot" src="mecopy.jpg" alt="Headshot of Leslie M. Van Dyck" width="180" height="180"
+        loading="lazy">
     </header>
-    <section>
+
+    <!-- ===== Education ===== -->
+    <section id="education">
       <h2>Education</h2>
-      <p>BS in Computer Science, Example University</p>
+
+      <div class="edu-item">
+        <h3>City College of San Francisco, Mathematics with Computer Science (AS-T)</h3>
+        <p><strong>Status:</strong> In progress &nbsp;•&nbsp; <strong>Years:</strong> 2024 to Present</p>
+        <ul>
+          <li><strong>Ultimate goal:</strong> Master’s in Mathematics with a strong base in Physics &amp; Computer
+            Science</li>
+          <li><strong>Focus:</strong> problem solving and algorithmic thinking aligned to Physics/EE transfer
+            preparation</li>
+        </ul>
+      </div>
+
+      <div class="edu-item">
+        <h3>U.S. Air Force, Aircraft Electrical &amp; Environmental Systems (AFSC 2A6X6), Technical Training</h3>
+        <p>
+          <strong>AFSC:</strong> 2A6X6 (Apprentice, 3-Level) &nbsp;•&nbsp;
+          <strong>Year:</strong> 2020 &nbsp;•&nbsp;
+          <strong>Location:</strong> Sheppard AFB, 361st TRS
+        </p>
+        <ul>
+          <li>Electrical power generation and distribution, lighting, instruments, oxygen systems, ECS/pressurization
+          </li>
+          <li>Wiring and schematics, continuity and insulation checks, cannon-plug terminations, QA/TO procedures</li>
+          <li>Troubleshooting fundamentals, safety, tool control, flight-line maintenance practices</li>
+        </ul>
+      </div>
+
+      <div class="edu-item">
+        <h3>U.S. Army Signal Center &amp; School, Fort Gordon, GA, Advanced Individual Training</h3>
+        <p><strong>MOS:</strong> 31S to 25S30 (Advanced level) &nbsp;•&nbsp; <strong>Year:</strong> 1997</p>
+        <ul>
+          <li>End to end SATCOM operations: satellite access, antenna pointing and polarization, link budgets, modem
+            and M&amp;C configuration, COMSEC crypto keying (SNR/Es/No, BER)</li>
+          <li>RF troubleshooting and mitigation: LNA/LNB/BUC/HPA chains, IF and RF paths, spectrum analysis; resolved
+            cross-pol, adjacent-channel, and intermod issues with filtering and gain staging</li>
+          <li>IP over SATCOM: VLAN routing on TDMA, FDMA, DAMA; QoS/CoS and encryption; tuned modulation and coding
+            (including ACM) for throughput versus reliability</li>
+        </ul>
+      </div>
     </section>
-    <section>
+
+
+    <!-- ===== Experience ===== -->
+    <section id="experience">
       <h2>Experience</h2>
-      <p>Software Intern, Tech Company — Developed Python apps and web tools.</p>
-    </section>
-    <section>
-      <h2>Projects</h2>
-      <p>Created an interactive turtle graphics app using Python.</p>
+
+      <div class="xp-item">
+        <h3>Aircraft Electrical &amp; Environmental Systems (AFSC 2A656, Journeyman/5-Level)</h3>
+        <p>Air National Guard, 2020–Present • 166th Airlift Wing, New Castle, Delaware</p>
+        <ul>
+          <li>Qualified Journeyman (5-Level): independent troubleshooting, corrective actions, and sign-offs IAW
+            TOs/AFIs and QA.</li>
+          <li>Troubleshoot &amp; repair aircraft electrical power generation/distribution, ECS/pressurization, oxygen,
+            lighting, and instrumentation.</li>
+          <li>Perform continuity/insulation checks, wiring-harness repairs, and cannon-plug terminations; verify using
+            schematics and multimeters.</li>
+          <li>Apply circuits &amp; thermodynamics to resolve load, heat, and airflow issues; document in eTools/AFTO
+            781
+            series.</li>
+          <li>Lead/assist red-ball &amp; phase inspections; enforce FOD/tool control and flight-line safety in
+            time-critical ops.</li>
+        </ul>
+      </div>
+
+      <div class="xp-item">
+        <h3>Satellite Communications Network Engineer (29Y10 → 31S20 → 25S30)</h3>
+        <p>U.S. Army (Active Duty), 1997–2007</p>
+        <ul>
+          <li>Operated &amp; maintained SATCOM terminals; antenna alignment, link budgets, BER/QoS testing, and crypto
+            procedures.</li>
+          <li>Applied wave-propagation physics to optimize links: free-space path loss, Fresnel clearance,
+            diffraction/scattering, polarization, and SNR.</li>
+          <li>Diagnosed RF impairments (adjacent-channel, intermod, oscillator drift) and mitigated via filtering,
+            gain
+            staging, and pointing/obstruction corrections.</li>
+          <li>Integrated RF &amp; IP networks across terrestrial/SAT backhaul; tuned modulation/coding for reliability
+            vs throughput.</li>
+        </ul>
+      </div>
+
+      <div class="xp-item">
+        <h3>Content Creator &amp; Technical Educator</h3>
+        <p>99 Red Penguins / FlowThisWay, 2022–Present • San Francisco, CA</p>
+        <ul>
+          <li>Built live-stream/IRL workflows (OBS on Mac, ATEM Mini Pro, Elgato Wave/Stream Deck) with latency-aware
+            signal paths and scene failover.</li>
+          <li>Developed student-friendly guides; bilingual delivery (EN/ES).</li>
+        </ul>
+      </div>
+
+      <div class="xp-item">
+        <h3>Electrical &amp; Network Engineer / Business Owner</h3>
+        <p>Telecom &amp; Low-Voltage Projects — 10+ years</p>
+        <ul>
+          <li>Fiber splicing and structured cabling; router/switch configuration with documented turn-ups and
+            handoffs.
+          </li>
+          <li>RF/coverage-aware site surveys; placement to reduce shadowing and multipath while meeting code &amp;
+            safety.</li>
+          <li>Estimating, budgeting, and schedule control; customer training and post-install support.</li>
+        </ul>
+      </div>
     </section>
   </div>
 </body>
+
 </html>

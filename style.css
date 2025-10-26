@@ -4,7 +4,9 @@ body {
   margin: 0;
   padding: 0;
   background: #f5f5f5;
+  line-height: 1.6;
 }
+
 .container {
   max-width: 900px;
   margin: 2rem auto;
@@ -12,37 +14,51 @@ body {
   padding: 2rem;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
+
+/* Header: text left, photo right */
 header {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  gap: 1.25rem;              /* distance between text and photo */
 }
-header img {
+
+header > div {
+  flex: 1;                   /* text block expands on the left */
+}
+
+/* Use your .headshot class (safer than styling all header images) */
+.headshot {
   width: 120px;
   height: 120px;
   border-radius: 50%;
   object-fit: cover;
+  margin-left: auto;         /* pushes the image to the right edge */
 }
-header h1 {
+
+h1 {
   font-size: 2rem;
-  margin: 0;
+  margin: 0 0 .25rem 0;
 }
-section {
-  margin-top: 1.5rem;
-}
+
+.tagline { margin: .25rem 0 .75rem; color: #444; }
+
+section { margin-top: 1.5rem; }
+h2 { margin: 1.5rem 0 .75rem; border-top: 2px solid #eee; padding-top: .75rem; }
+h3 { margin: .25rem 0; }
+
+/* Tidy lists and card spacing */
+ul { margin: .25rem 0 .75rem 1.25rem; }
+li { margin: .25rem 0; }
+.edu-item, .xp-item, .project-item { margin-bottom: 1rem; }
+
+/* Links */
+a { color: #1a5fb4; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Mobile: stack header nicely */
 @media (max-width: 600px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  header img {
-    margin-top: 1rem;
-  }
-  .container {
-    padding: 1rem;
-  }
-  header h1 {
-    font-size: 1.5rem;
-  }
+  header { flex-direction: column; align-items: flex-start; }
+  .headshot { margin-left: 0; width: 120px; height: 120px; }
+  .container { padding: 1rem; }
+  h1 { font-size: 1.5rem; }
 }
